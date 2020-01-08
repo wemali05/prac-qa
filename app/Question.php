@@ -34,10 +34,10 @@ class Question extends Model
     {
         if ($this->answers > 0) {
             if ($this->best_answer_id) {
-                return "answered-acceptedccepted-answer";
+                return "answered-accepted";
             }
             return "answered";
         }
-          return "unanswered";
+        return "unanswered";
     }
 }
